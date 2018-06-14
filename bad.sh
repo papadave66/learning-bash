@@ -18,3 +18,11 @@ then
 else 
 	printf "seriously?\n"
 fi
+
+#print 5 times yes
+i=0
+while(($i<=5))
+do
+	printf "yes\n"
+	let "i++"
+done
