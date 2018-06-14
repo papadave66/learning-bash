@@ -8,4 +8,13 @@ printf "ok . now tell me what's your name!\n"
 read -p "input your name:" name
 printf "hello %s \n" $name
 
-
+read -p "tell me if you are a 'boy' or a girl: " $sex
+if [ $sex='boy' ]
+then
+	printf "hello bro\n"
+elif [ $sex='girl' ]
+then
+	printf "hello sis \n"
+else 
+	printf "seriously?\n"
+fi
